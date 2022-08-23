@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #672280;
+  align-items: center;
+}
+ 
+nav > div{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+nav > div >h1{
+  color: azure;
+  font-family: sans-serif;
+}
+nav > div > img{
+  height: 60px;
+}
+nav > h3 {
+  color: azure;
+  font-family: sans-serif;
+}
+
+.form{
+  padding: 30px;
+  gap: 30px;
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+
+}
+.form--input{
+  font-family: sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: sans-serif;
+  color: azure;
+  background: #672280;
+  border: #672280; 
+  border-radius: 5px;
+}
+.form--button:hover{
+  cursor: pointer;
+}
+
+.meme {
+  width: 100%;
+  position: relative;
+  padding-left: 30px;
+
+}
+
+.meme--image {
+  width: 92%;
+  border-radius: 3px;
+  justify-content: center;
+  
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
