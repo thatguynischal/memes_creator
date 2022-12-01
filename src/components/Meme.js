@@ -4,7 +4,7 @@ export default function Meme() {
   const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
-    randomImage: "http://i.imgflip.com/1bij.jpg",
+    randomImage: "https://i.imgflip.com/1h7in3.jpg",
   });
   const [allMeme, setAllMeme] = React.useState([]);
 
@@ -17,6 +17,7 @@ export default function Meme() {
   function getMemeImage() {
     const randomNumber = Math.floor(Math.random() * allMeme.length);
     const url = allMeme[randomNumber].url;
+    console.log(url)
     setMeme((prevMeme) => ({
       ...prevMeme,
       randomImage: url,
