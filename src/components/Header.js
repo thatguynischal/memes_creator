@@ -1,15 +1,13 @@
-import React from 'react'
+import React from "react";
+import{GiImpLaugh} from 'react-icons/gi'
 
 const Header = () => {
   return (
-      <nav>
-    <div>
-        <img src ="./troll.png" />
-        <h1>MemeGenerator</h1>
-    </div>
-    <h3>Apple And Oranges</h3>
-    </nav>
-  )
-}
+      <div className="flex justify-center items-center flex-col my-5 h-1/5">
+        <span className="text-7xl"><GiImpLaugh /></span>
+        <h1 className="font-thin italic">I be funny sometimes.</h1>
+      </div>
+  );
+};
 
-export default Header
+export default Header;
